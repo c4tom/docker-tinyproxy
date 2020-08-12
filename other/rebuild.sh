@@ -1,1 +1,1 @@
-docker stop tinyproxy && docker rm tinyproxy && docker build -t dannydirect/tinyproxy:latest . && docker run -d --name='tinyproxy' -p 7777:8888 dannydirect/tinyproxy:latest 192.168.1.100 192.168.1.200/18 192.168.1.300 10.103.0.0/24 && docker logs -f tinyproxy
+docker stop tinyproxy && docker rm tinyproxy && docker build -t cahato/alpine_tinyproy:3.12_1.10:latest . && docker run -d --name='tinyproxy' -p 7777:8888 cahato/alpine_tinyproy:3.12_1.10:latest 192.168.1.100 192.168.1.200/18 192.168.1.300 10.103.0.0/24 && docker logs -f tinyproxy

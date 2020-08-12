@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  squid:
+    image: cahato/alpine_tinyproxy:3.12_1.10
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    container_name: alpine_tinyproxy
+    hostname: tinyproxy
+    restart: always
+    tty: true
+    stdin_open: true
+    privileged: false

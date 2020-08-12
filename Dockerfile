@@ -1,8 +1,6 @@
-FROM alpine:3.10
+FROM alpine:3.12
 
-RUN apk add --no-cache \
-	bash \
-	tinyproxy
+RUN apk add --no-cache bash tinyproxy
 
 COPY run.sh /opt/docker-tinyproxy/run.sh
 
